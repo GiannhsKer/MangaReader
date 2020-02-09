@@ -14,7 +14,7 @@ class MyComponent extends React.Component {
                         placeholder="Search"
                         onChangeText={query => { this.setState({ firstQuery: query }); }}
                         value={firstQuery}
-                    
+                    />
                 <List.Section>
                 <List.Subheader>Manga Reader</List.Subheader>
                     <List.Item
@@ -31,8 +31,8 @@ class MyComponent extends React.Component {
         );
     }
 }
-class MyComponent1 extends React.Component{
+/*class MyComponent1 extends React.Component{
             
 }
-
+*/
 export default MyComponent;
