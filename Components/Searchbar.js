@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Searchbar } from 'react-native-paper';
+import {StyleSheet} from 'react-native';
 
-export default class MyComponent extends React.Component {
+export class Search extends React.Component {
   state = {
     firstQuery: '',
   };
@@ -10,10 +11,18 @@ export default class MyComponent extends React.Component {
     const { firstQuery } = this.state;
     return (
       <Searchbar
-        placeholder="Search"
+        style = {styles.search}
+        
         onChangeText={query => { this.setState({ firstQuery: query }); }}
         value={firstQuery}
       />
     );
   }
 }
+
+const styles = StyleSheet.create({
+  searchbar: {
+    marginTop: 32 ,
+    placeholder:"Search",
+  },
+});
