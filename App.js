@@ -1,19 +1,34 @@
-import * as React from 'react';
-import {Search} from './Components/Searchbar'
-import {Listt} from './Components/List'
-import {View} from 'react-native'
+import React from 'react';
+import { View, StyleSheet, Text } from 'react-native';
+import { Search } from './Components/Searchbar';
+// import {Listt} from './Components/List'
 
 
-export default class App extends React.Component {
-  
-  render() {
-    return (
-        <View>
-          <Search/>
-          <Listt/>
-        </View>
-        
-    );
-  }
-}
+const App = ({ title }) => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>{title}</Text>
+      <Search />
+      {/* <Listt/> */}
+    </View>
+  );
+};
 
+App.defaultProps = {
+  title: 'Manga Reader',
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  text: {
+    padding: 40,
+    textAlign: 'center',
+    // color:'white',
+    fontSize: 35
+  },
+});
+
+export default App;
