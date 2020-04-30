@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { Search } from './Components/Searchbar';
-// import {Listt} from './Components/List'
+import {Listt} from './Components/List'
 
 
 const App = ({ title }) => {
@@ -9,7 +9,7 @@ const App = ({ title }) => {
     <View style={styles.container}>
       <Text style={styles.text}>{title}</Text>
       <Search />
-      {/* <Listt/> */}
+      <Listt/>
     </View>
   );
 };
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   text: {
     padding: 40,
     textAlign: 'center',
-    // clor:'white',
+    // color:'white',
     fontSize: 35
   },
 });
