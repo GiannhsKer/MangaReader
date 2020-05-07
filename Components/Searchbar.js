@@ -22,6 +22,6 @@ export class Search extends React.Component {
 
 const styles = StyleSheet.create({
   search: {
-    marginTop: 50,
+    marginTop: 70,
   },
 });

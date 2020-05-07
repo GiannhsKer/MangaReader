@@ -1,34 +1,38 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { Search } from './Components/Searchbar';
-import {Listt} from './Components/List'
+import { Listt } from './Components/List'
 
 
-const App = ({ title }) => {
+const App = () => {
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{title}</Text>
+      <Text style={styles.text}>My App</Text>
       <Search />
-      <Listt/>
+      <Listt />
     </View>
   );
 };
 
-App.defaultProps = {
-  title: 'Manga Reader',
-};
-
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex:1,
     alignItems: 'center',
   },
   text: {
-    padding: 40,
     textAlign: 'center',
-    // color:'white',
-    fontSize: 35
+    color:'red',
+    fontSize: 35,
+    marginTop: 50,
   },
+  // search: {
+  //   marginTop: 20,
+    
+  // },
+  // list: {
+  //   marginTop: 300,
+  // }
 });
 
 export default App;
