@@ -38,7 +38,7 @@ import { TouchableOpacity, StyleSheet, Text, View} from 'react-native'
 //    }
 // }
 
- List = () => {
+List = () => {
 
       return (
       <View style={styles.container}>
