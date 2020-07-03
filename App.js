@@ -1,16 +1,15 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { Search } from './Components/Searchbar';
-import { Listt } from './Components/List'
-
+import List from './Components/List'
 
 const App = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>My App</Text>
+      <Text style={styles.text}>Manga Reader</Text>
       <Search />
-      <Listt />
+      List()
     </View>
   );
 };
@@ -22,17 +21,10 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
-    color:'red',
+    color:'black',
     fontSize: 35,
     marginTop: 50,
   },
-  // search: {
-  //   marginTop: 20,
-    
-  // },
-  // list: {
-  //   marginTop: 300,
-  // }
 });
 
 export default App;
