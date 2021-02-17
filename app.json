@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "aaa",
-    "slug": "lol",
+    "name": "Manga Reader",
+    "slug": "Manga Reader",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [

@@ -1,30 +1,18 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { Search } from './Components/Searchbar';
-import List from './Components/List'
+import Home from './screens/homepage'
+import { View, StyleSheet } from 'react-native'
 
-const App = () => {
-
+export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Manga Reader</Text>
-      <Search />
-      List()
+      <Home />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
-    alignItems: 'center',
-  },
-  text: {
-    textAlign: 'center',
-    color:'black',
-    fontSize: 35,
-    marginTop: 50,
-  },
+    height: "100%",
+    width: "100%",
+  }
 });
-
-export default App;
